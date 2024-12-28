@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Page setup -->
+    <meta charset="utf-8">
+    <title>Rohit Sarma Sarkar</title>
+    <meta name="description" content="A brief description of your site for search engines">
+    <meta name="author" content="Information about the author here">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link rel="icon" type="image/png" href="favicon.png">
+  
+    <!-- Stylesheets -->
+    <!-- Reset default styles and add support for google fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+   
+    <!-- Custom styles -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
+
+    <!-- Want to add Bootstrap? -->
+    <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+    
+  </head>
+  
+  <body>
+
+    <header id="header">
+      <h1>Dr. Rohit Sarma Sarkar</h1>
+      
+      
+      <h3>Welcome to my homepage!</h3>
+
+
+      
+      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
+      <ul class="main-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#academics">Academics</a></li>
+        <li><a href="#publication">Publications</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#teaching">Teaching Experience</a></li>
+        <li><a href="#contact">Contact Details</a></li>
+      </ul>                 
+    </header>
+   
+    <div id="container">
+      <div class="inner">
+        <div id="content"> 
+          
+          <div id="home" class="content-region hide">
+            <h2>Home</h2>
+
+            <img src="logo.png" alt="Logo">
+
+
+            <p>
+              Hi, I'm Rohit and I am currently a postdoctoral researcher at the International Centre for Theoretical Sciences (ICTS-TIFR), Bengaluru, India. I completed my PhD as a Prime Minister's Research Fellow (PMRF) under the supervision of Dr. Bodhayan Roy, from the Department of Mathematics, Indian Institute of Technology Kharagpur. My research interest lie in the area of quantum computing, quantum circuits, quantum information, linear algebra and quantum walks. My thesis is titled Scalable quantum circuit representation of unitary 
+              matrices. Here is my <a href="CVDECRohit.pdf">CV</a>.
+            </p>
+            
+          </div>
+
+          <div id="research" class="content-region hide">
+            <h2>Research</h2>
+            <p>
+              In my PhD tenure, we developed scalable quantum circuits for unitary matrices that describe the evolution of many-body quantum systems. Specifically, we proposed a quantum neural network-based framework to approximate any target unitary for n-qubit systems, and we established a circuit representation for the exponential of scaled Pauli strings which we used to propose scalable quantum circuit simulations of various Hamiltonians on near-term quantum devices. Furthermore, we analyzed several fundamental properties of diverse classes of discrete-time quantum walk models on various graphs using parametric coins which were introduced by us. For discrete-time three state quantum walks on Cayley graphs, we additionally proposed a scalable quantum circuit model using elementary qutrit gates. We explored the circuit complexity of the proposed quantum circuit models, and incorporated various noise models in our circuits to investigate the performance of the proposed circuit simulations on near-term quantum computers. Here, scalable quantum circuit means that it is possible to construct a quantum circuit for (n+1)-qubit system from a quantum circuit on n-qubit system using additional elementary quantum gates.
+            </p>
+
+            <p>
+              Firstly, we developed a parametric representation of unitary matrices of dimension d with the introduction of a new unitary Hermitian basis for the algebra of d-sized complex matrices. Then, we adopted a Lie group theoretic approach to create an optimization algorithm for approximating any target unitary matrix using this parametric representation. Consequently, we employed these results to propose a new unitary Hermitian basis for the algebra of 2^n-sized complex matrices, called the Standard Recursive Block Basis which serves as an alternative to the Pauli-string basis. We used this basis to develop an optimization-based approximation algorithm for a scalable quantum neural network representation of a target unitary for n-qubit systems. Additionally, we developed a scalable quantum circuit representation of the exponential of scaled Pauli strings, using which, we have executed circuit simulations of several one-dimensional Hamiltonians on near-term quantum computers, utilizing the first-order Suzuki-Trotter formula. These Hamiltonians include 2-sparse Hamiltonians, Ising Hamiltonians, and  time-independent and time-dependent Random Field Heisenberg Hamiltonians, and Transverse Magnetic Random Field Quantum Ising Hamiltonians. 
+            </p>
+
+            <p>
+              Further, we introduced discrete-time quantum walk models on cycle graphs, one-dimensional, two-dimensional lattices and Cayley graphs corresponding to Dihedral groups, using parametric coin operators known as generalized Grover coins. Such parameterization was obtained via characterization of orthogonal matrices that are linear sum of permutations i.e. generalization from a combinatorial perspective. We analytically derived the periodicity of these walks and demonstrated through numerical simulations that the walker tends to localize at the initial position for a wide range of parameters of the coin operator, depending on the choice of initial coin states. We then developed qutrit quantum circuit models for simulating three-state discrete-time quantum walk on Cayley graphs defined by Dihedral groups and the additive group of integers modulo a positive integer. These circuit models are scalable and are constructed using elementary qutrit quantum gates, such as single qutrit rotation gates, the qutrit-X gate, and two-qutrit controlled gates.  We also subjected the proposed circuits for Hamiltonian simulations and quantum walks to diverse noise models of varying strengths in order to analyze the circuit performance in noisy intermediate-scale quantum (NISQ) settings.
+            </p>
+
+          </div>
+
+          <div id="academics" class="content-region hide">
+            <h2>Academics</h2>
+
+            <ul>
+              <li>PhD in Mathematics, Indian Institute of Technology Kharagpur (2024)</li>
+              <li>Master of Science in Mathematics, Indian Institute of Technology Kharagpur (2019)</li>
+              <li>Bachelor of Science (Hons.) in Mathematics, Presidency University Kolkata (2017)</li>
+            </ul>
+          </div>
+
+          <div id="publication" class="content-region hide">
+            <h2>Publications</h2>
+
+            <ul>
+                <li>Chakraborty, Sabyasachi, Sarma Sarkar, Rohit, and Majumder, Sonjoy, Scalable quantumcircuit simulation of a chaotic Ising chain in light induced transverse field, 16th International Conference on Fiber Optics and Photonics, Accepted (Awarded Best Paper), (2024). </li>
+
+                <li>Sarma Sarkar, Rohit, and Adhikari, Bibhas, Quantum circuit model for discrete-time three-state quantum walks on Cayley graphs, Physical Review A, vol. 110 (1), pp. 012617, doi: 10.1103/PhysRevA.110.012617, (2024). <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.110.012617">Link</a></li>
+
+                <li>Sarma Sarkar, Rohit, and Adhikari, Bibhas, Discrete-time quantum walks on Cayley graphs of Dihedral groups using generalized Grover coins, Quantum Information Processing, vol. 23 (5), pp. 172, https://doi.org/10.1007/s11128-024-04385-y, (2024). <a href="https://link.springer.com/article/10.1007/s11128-024-04385-y">Link</a></li>
+
+                <li>Sarma Sarkar, Rohit, and Adhikari, Bibhas, Scalable Quantum Circuits for N-Qubit Unitary Matrices, 2023 IEEE International Conference on Quantum Computing and Engineering (QCE), Bellevue, WA, USA, 2023, doi: 10.1109/QCE57702.2023.00122, (2023). <a href="https://ieeexplore.ieee.org/abstract/document/10313900">Link</a></li>
+
+                <li>Mandal, Amrita, Sarma Sarkar, Rohit, and Adhikari, Bibhas, Localization of two dimensional quantum walks defined by generalized Grover coins, Journal of Physics A: Mathematical and Theoretical, vol. 56 (2), pp. 025303, doi: 10.1088/1751-8121/acb304, (2023). <a href="https://iopscience.iop.org/article/10.1088/1751-8121/acb304/meta">Link</a></li>
+
+                <li>Mandal, Amrita, Sarma Sarkar, Rohit, Chakraborty, Shantanav, and Adhikari, Bibhas, Limit theorems and localization of three-state quantum walks on a line defined by generalized Grover coins, Physical Review A, vol. 106 (4), pp. 042405, doi: 10.1103/PhysRevA.106.042405, (2022). <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.106.042405">Link</a></li>
+                
+                <li>Sarma Sarkar, Rohit, Mandal, Amrita, and Adhikari, Bibhas, Periodicity of lively quantum walks on cycles with generalized Grover coin, Linear Algebra and its Applications, vol. 604, pp. 399-424, https://doi.org/10.1016/j.laa.2020.07.006, (2020). <a href="https://www.sciencedirect.com/science/article/pii/S0024379520303293">Link</a></li>
+            </ul>
+
+            <p>For further details on preprints and publications, check out my <a href="https://www.researchgate.net/profile/Rohit-Sarma-Sarkar">ResearchGate profile</a> and my <a href="https://scholar.google.com/citations?user=rObI6cEAAAAJ&hl=en">Google Scholar profile </a>.
+            
+          </div>
+
+
+
+
+          <div id="awards" class="content-region hide">
+            <h2>Awards and Accolades</h2>
+
+            <ul>
+              <li>Secured the highest marks in Mathematics in W.B.B.S.E secondary examination (2012)</li>
+              <li>Secured the All India Rank of 145 at IIT JAM entrance for MSc. Entrance. (2017)</li>
+              <li>Received CSIR-UGC Junior Research Fellowship in Mathematics with an All India Rank of 47. (2018) </li>
+              <li>Received GATE Fellowship in mathematics given by MHRD, Government of India (2019) </li>
+              <li>Secured top 3 position in MSc. Mathematics IIT KGP. (2019) </li>
+              <li>Received the Prabodh Chandra Sanyal Award for the best Masters Thesis in Mathematics,IIT Kharagpur. (2019)  Thesis titled: Chip Firing Problems with Kronecker Products and Quantum Walks </li>
+              <li>Received the Prime Minister's Research Fellowship (PMRF)  (2020) </li>
+            </ul>
+          </div>
+
+          <div id="teaching" class="content-region hide">
+            <h2>Teaching Experience</h2>
+          
+            <h3>Indian Institute of Technology Kharagpur:</h3>
+            <ul>
+              <li>Advanced Calculus/Math-I Tutorial Instructor for Fall 2020, <em>Subject Code: MA11003</em></li>
+              <li>Linear Algebra, Numerical and Complex Analysis Tutorial Instructor for Spring 2021, <em>Subject Code: MA11004</em></li>
+              <li>Probability and Statistics, TA, Fall 2021, <em>Subject Code: MA20205</em></li>
+              <li>Advanced Calculus/Math-I Tutorial Instructor for Fall 2021, <em>Subject Code: MA11003</em></li>
+              <li>Information and Coding Theory, TA, Spring 2022, <em>Subject Code: MA41024/MA60020</em></li>
+              <li>Integral Equations and Variational Methods, TA, Spring 2022, <em>Subject Code: MA51004</em></li>
+              <li>Linear Algebra, Numerical and Complex Analysis Tutorial Instructor for Spring 2022, <em>Subject Code: MA11004</em></li>
+            </ul>
+          
+            <h3>Other Institutes/Universities:</h3>
+            <ul>
+              <li>Advanced Linear Algebra course instructor at Kharagpur College, Kharagpur City Rd, Kharagpur, West Bengal 721305, India, 2022, 2023, 2024.</li>
+              <li>Advanced Linear Algebra course instructor at Hijli College, Post Hijli Co-operative, Paschim Medinipur, Kharagpur, West Bengal 721306, India, 2022, 2023, 2024.</li>
+              <li>Mathematics instructor for competitive examinations at Presidency University, Kolkata, 86/1 College Street, Kolkata-700003, West Bengal, India, 2023–2024.</li>
+            </ul>
+          
+                      
+          </div>
+          
+          <div id="contact" class="content-region hide">
+            <h2>Contact Details</h2>
+            <p>
+              Find me at:
+              <ul>
+                <li><a href="https://www.researchgate.net/profile/Rohit-Sarma-Sarkar">ResearchGate</a> </li> 
+                <li> <a href="https://scholar.google.com/citations?user=rObI6cEAAAAJ&hl=en">Google Scholar </a> </li>
+                <li><a href="https://www.linkedin.com/in/rohit-sarma-sarkar-897533221/">LinkedIn</a> </li> 
+              </ul>
+              ORCID Id: <a href="https://orcid.org/0000-0003-0747-2572">0000-0003-0747-2572</a>
+            </p>
+            <p>
+              Email:
+              <ul>
+                <li>rohit15sarkar[AT]yahoo[DOT]com</li>
+              </ul>
+              
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <footer>  
+      <p>&copy; Rohit Sarma Sarkar, All rights are reserved</p>
+    </footer>
+    
+    <!-- Load additional JS scripts here -->
+    <script type="text/javascript" src="script.js"></script>
+    
+  </body>
+</html>

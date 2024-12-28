@@ -1,0 +1,201 @@
+/**
+ * Typography & Text styles
+ */
+
+/* Set base font size for REM scaling */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem; /* Use REM for better scaling */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Links
+ */
+a {
+  font-weight: normal;
+  text-decoration: none;
+  color: #EF6D3D;
+}
+a:focus {
+  outline: thin dotted;
+}
+
+small {
+  font-size: 75%;
+}
+
+/**
+ * Header Styles
+ */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+  text-align: center;
+  padding: 20px 0; /* Adjusted padding */
+}
+
+header h1,
+header h2 {
+  margin: 10px 0; /* Adjusted spacing */
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/**
+ * Headings
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.3;
+  text-rendering: optimizeLegibility;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+h1 { font-size: 4.0rem; } /* Increased for better hierarchy */
+h2 { font-size: 3.5rem; }
+h3 { font-size: 2.8rem; }
+h4 { font-size: 2.2rem; }
+h5 { font-size: 1.8rem; }
+h6 { font-size: 1.6rem; }
+
+/**
+ * Paragraphs
+ */
+p {
+  margin: 0 auto 1.5em;
+  max-width: 100%; /* Removed restriction for flexibility */
+  text-align: justify; /* Improve readability */
+}
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  border-left: 4px solid #AFC0D2;
+  margin: 1.6em auto;
+  padding: 1em 1.5em;
+  font-size: 1.8rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 6px; /* Rounded corners */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/**
+ * Layout styles
+ */
+
+/* Full size background image */
+html, #container, .inner {
+  background-color: transparent;
+}
+html {
+  background: url(background.png) center center no-repeat fixed;
+  background-size: cover;
+}
+body {
+  max-width: 1400px; /* Expanded middle content area */
+  margin: 20px auto;
+  padding: 0 20px; /* Add padding for smaller screens */
+}
+
+header, #content, footer {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 40px;
+  color: #FFFFFF;
+  border-radius: 10px; /* Enhanced rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+}
+
+/* Menu Links */
+ul.main-menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center-align menu items */
+  list-style: none;
+  gap: 15px; /* Add spacing between menu items */
+}
+ul.main-menu li a {
+  margin: 0;
+  font-size: 2.0rem;
+  border-bottom: solid transparent 3px;
+  color: #cfd2da;
+  padding: 5px 10px; /* Added padding for better click area */
+  transition: color 0.3s, border-color 0.3s; /* Smooth transitions */
+}
+ul.main-menu li a:hover {
+  color: #FFFFFF;
+}
+ul.main-menu li a.active {
+  color: #FFFFFF;
+  border-bottom-color: #EF6D3D;
+}
+
+/* Utility classes */
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  body {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  header {
+    padding: 30px 0;
+  }
+  ul.main-menu {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 20px 0;
+  }
+  ul.main-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Reduced spacing */
+  }
+  ul.main-menu li a {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 3.2rem; }
+  h2 { font-size: 2.8rem; }
+  h3 { font-size: 2.4rem; }
+  ul.main-menu li a {
+    font-size: 1.6rem;
+  }
+}
